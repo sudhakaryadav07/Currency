@@ -15,7 +15,7 @@ class Currency extends Component {
     this.initState();
     setInterval(() => {
       this.initState();
-    }, 1000);
+    }, 5000);
   }
 
   initState = async () => {
@@ -24,7 +24,9 @@ class Currency extends Component {
       let { quote } = response.data;
       this.setState({ currency: { name: 'USD', value: quote['USD'] } });
     } catch (e) {
+
     }
+
   }
 
   render() {

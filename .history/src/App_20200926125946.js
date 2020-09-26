@@ -24,7 +24,9 @@ class Currency extends Component {
       let { quote } = response.data;
       this.setState({ currency: { name: 'USD', value: quote['USD'] } });
     } catch (e) {
+
     }
+
   }
 
   render() {

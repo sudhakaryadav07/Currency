@@ -19,20 +19,15 @@ align-items: center;
 }
 
 .currencyContainer{
-  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   }
   
   .currencyItem{
-    height:75px;
-    width: 250px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    justify-content: center;
- display:flex;
- align-items: center;
- border: 0.5px solid grey;
+    height:40px;
+    width: 80px;
+    text-align:  center;
     }
     

@@ -15,7 +15,7 @@ class Currency extends Component {
     this.initState();
     setInterval(() => {
       this.initState();
-    }, 1000);
+    }, 5000);
   }
 
   initState = async () => {
@@ -24,25 +24,30 @@ class Currency extends Component {
       let { quote } = response.data;
       this.setState({ currency: { name: 'USD', value: quote['USD'] } });
     } catch (e) {
+
     }
+
   }
 
   render() {
     let { currency } = this.state;
+
+    if (!currency) {
+      return (
+        <div className="loaderContainer">
+          <CircularProgress />
+        </div>
+      );
+    }
 
     return (
       <div className="currencyContainer">
         <AppBar position="fixed" style={{ display: 'flex', alignItems: 'flex-start', paddingLeft: 10, justifyContent: 'center', height: '9%' }}>
           <p style={{ fontSize: 25, margin: 0 }}>CURRENCY</p>
         </AppBar>
-        {!currency ?
-         <div className="loaderContainer">
-         <CircularProgress />
-       </div>:
-        <div style={{ display: 'flex', flexDirection: 'row',justifyContent:'space-evenly',width:'100%',padding:'0px 180px 0px 180px' }}>
-          <p style={{fontSize:70}}>{currency.name}</p> 
-          <p style={{fontSize:70,color:'grey'}}>{currency.name === "USD" ? 1 / currency.value + 0.35 : currency.value}</p>
-        </div>}
+        <div style={{ display: 'flex', flexDirection: 'row',justifyContent:'space-between',width:'30%' }}>
+          <p>{currency.name}</p> <p>{currency.name === "USD" ? 1 / currency.value + 0.35 : currency.value}</p>
+        </div>
       </div>
     )
   }

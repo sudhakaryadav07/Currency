@@ -15,7 +15,7 @@ class Currency extends Component {
     this.initState();
     setInterval(() => {
       this.initState();
-    }, 1000);
+    }, 5000);
   }
 
   initState = async () => {
@@ -24,7 +24,9 @@ class Currency extends Component {
       let { quote } = response.data;
       this.setState({ currency: { name: 'USD', value: quote['USD'] } });
     } catch (e) {
+
     }
+
   }
 
   render() {
@@ -39,9 +41,9 @@ class Currency extends Component {
          <div className="loaderContainer">
          <CircularProgress />
        </div>:
-        <div style={{ display: 'flex', flexDirection: 'row',justifyContent:'space-evenly',width:'100%',padding:'0px 180px 0px 180px' }}>
-          <p style={{fontSize:70}}>{currency.name}</p> 
-          <p style={{fontSize:70,color:'grey'}}>{currency.name === "USD" ? 1 / currency.value + 0.35 : currency.value}</p>
+        <div style={{ display: 'flex', flexDirection: 'row',justifyContent:'space-between',width:'30%' }}>
+          <p style={{fontSize:70}} >{currency.name}</p> 
+          <p style={{fontSize:70}}>{currency.name === "USD" ? 1 / currency.value + 0.35 : currency.value}</p>
         </div>}
       </div>
     )

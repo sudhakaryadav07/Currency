@@ -20,11 +20,14 @@ class Currency extends Component {
 
   initState = async () => {
     try {
-      let response = await axios.get('https://finnhub.io/api/v1/forex/rates?base=INR&token=bthrdp748v6rsb74biig');
-      let { quote } = response.data;
-      this.setState({ currency: { name: 'USD', value: quote['USD'] } });
+      // let response = await axios.get('https://finnhub.io/api/v1/forex/rates?base=INR&token=bthrdp748v6rsb74biig');
+      // let { quote } = response.data;
+      // this.setState({ currency: { name: 'USD', value: quote['USD'] } });
+      this.setState({ currency: { name: 'USD', value: Math.random() } });
     } catch (e) {
+
     }
+
   }
 
   render() {
