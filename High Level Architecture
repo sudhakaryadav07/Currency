@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-12-13T03:19:35.497Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="dzE_03Jsx2q8zoAswBIz" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-13T03:20:14.880Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36 Edg/86.0.622.63" etag="Ec-uC44GlsMrdVDWaIY6" version="13.10.9" type="github">
   <diagram id="vO_29m2cTFqGhRBg4mTB" name="Page-1">
-    <mxGraphModel dx="2946" dy="1134" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1718" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -56,16 +56,10 @@
           <mxGeometry x="7.5" y="100" width="75" height="20" as="geometry" />
         </mxCell>
         <mxCell id="zuPkB6e1I32UhrpiY1IR-44" value="" style="group" vertex="1" connectable="0" parent="zuPkB6e1I32UhrpiY1IR-6">
-          <mxGeometry x="70" y="60" width="700" height="500" as="geometry" />
+          <mxGeometry x="70" y="60" width="560" height="500" as="geometry" />
         </mxCell>
         <mxCell id="zuPkB6e1I32UhrpiY1IR-4" value="" style="rounded=1;arcSize=10;dashed=0;fillColor=none;gradientColor=none;strokeWidth=2;" vertex="1" parent="zuPkB6e1I32UhrpiY1IR-44">
-          <mxGeometry x="-140" y="-40" width="840" height="540" as="geometry" />
-        </mxCell>
-        <mxCell id="zuPkB6e1I32UhrpiY1IR-18" value="&lt;font data-font-src=&quot;https://fonts.googleapis.com/css?family=ubuntu&quot; face=&quot;Tahoma&quot;&gt;Client Service&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="zuPkB6e1I32UhrpiY1IR-44">
-          <mxGeometry x="6" y="100" width="78" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="zuPkB6e1I32UhrpiY1IR-22" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/web-development-5/500/window-javascript-coding-128.png" vertex="1" parent="zuPkB6e1I32UhrpiY1IR-44">
-          <mxGeometry width="90" height="90" as="geometry" />
+          <mxGeometry x="-112" y="-40" width="672" height="540" as="geometry" />
         </mxCell>
         <mxCell id="zuPkB6e1I32UhrpiY1IR-46" value="" style="group" vertex="1" connectable="0" parent="zuPkB6e1I32UhrpiY1IR-6">
           <mxGeometry x="60" y="340" width="421" height="110" as="geometry" />
